@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>老张博客前台模版</title>
+	<meta name="keywords" content="老张博客前台模版">
+	<meta name="description" content="老张博客前台模版">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./layui/layui.js"></script>
+</head> 
+<body>
+<!-- 头部 开始 -->
+<div class="layui-header header trans_3">
+<div class="main index_main">
+	<a class="logo" href="./index.html"><img src="./images/logo.png" alt="老张博客前台模版"></a>
+	<ul class="layui-nav" lay-filter="top_nav">
+	  	<li class="layui-nav-item home"><a href="./index.html">首页</a></li>
+	  	<li class="layui-nav-item">
+	  		<a href="./article_list.html">学无止境</a>
+			<dl class="layui-nav-child"> <!-- 二级菜单 -->
+		      	<dd><a href="./article_list.html">PHP</a></dd>
+		      	<dd><a href="./article_list.html">WEB前端</a></dd>
+		    </dl>
+	  	</li>
+	  	<li class="layui-nav-item">
+	  		<a href="./case_list.html">分享无价</a>
+			<dl class="layui-nav-child"> <!-- 二级菜单 -->
+		      	<dd><a href="./case_list.html">源码分享</a></dd>
+		      	<dd><a href="./case_list.html">jQuery特效</a></dd>
+		    </dl>
+	  	</li>
+	  	<li class="layui-nav-item">
+	  		<a href="./diary.html">日记</a>
+	  	</li>
+	  	<li class="layui-nav-item">
+	  		<a href="./about_laozhang.html">关于</a>
+			<dl class="layui-nav-child"> <!-- 二级菜单 -->
+		      	<dd><a href="./about_laozhang.html">关于老张</a></dd>
+		      	<dd><a href="./about_lzcms.html">关于Lz_CMS</a></dd>
+		      	<dd><a href="./feedback.html">留言</a></dd>
+		    </dl>
+	  	</li>
+	</ul>
+	<div class="title">老张博客前台模版</div>
+	<form action="" mothod="post" class="head_search trans_3 layui-form">
+	  <div class="layui-form-item trans_3">
+	  	<!-- <span class="close trans_3"><i class="layui-icon">&#x1006;</i> </span> -->
+	    <div class="layui-input-inline trans_3">
+	      <select name="model_id trans_3">
+	      	<option value="1" selected >文章模型</option>
+	      	<option value="2">图集模型</option>
+	      </select>
+	    </div>
+	    <input type="text" name="keywords" placeholder="搜索" autocomplete="off" class="search_input trans_3">
+	    <button class="layui-btn" lay-submit="" style="display: none;"></button>
+	  </div>
+		
+	</form>
+</div>
+</div>
+<div class="header_back"></div>
+<!-- 头部 结束 -->
+<!-- 左边导航 开始 -->
+<div class="layui-side layui-bg-black left_nav trans_2">
+  <div class="layui-side-scroll">
+	<ul class="layui-nav layui-nav-tree"  lay-filter="left_nav">
+		<li class="layui-nav-item home"><a href="./index.html">首页</a></li>
+	  	<li class="layui-nav-item">
+	  		<a href="javascript:void();">学无止境</a>
+			<dl class="layui-nav-child"> <!-- 二级菜单 -->
+		      	<dd><a href="./article_list.html">PHP</a></dd>
+		      	<dd><a href="./article_list.html">WEB前端</a></dd>
+		    </dl>
+	  	</li>
+	  	<li class="layui-nav-item">
+	  		<a href="javascript:void();">分享无价</a>
+			<dl class="layui-nav-child"> <!-- 二级菜单 -->
+		      	<dd><a href="./case_list.html">源码分享</a></dd>
+		      	<dd><a href="./case_list.html">jQuery特效</a></dd>
+		    </dl>
+	  	</li>
+	  	<li class="layui-nav-item">
+	  		<a href="./diary.html">日记</a>
+	  	</li>
+	  	<li class="layui-nav-item">
+	  		<a href="javascript:void();">关于</a>
+			<dl class="layui-nav-child"> <!-- 二级菜单 -->
+		      	<dd><a href="./about_laozhang.html">关于老张</a></dd>
+		      	<dd><a href="./about_lzcms.html">关于Lz_CMS</a></dd>
+		      	<dd><a href="./feedback.html">留言</a></dd>
+		    </dl>
+	  	</li>
+	</ul>
+  </div>
+</div>
+<div class="left_nav_mask"></div>
+<div class="left_nav_btn"><i class="layui-icon">&#xe602;</i></div>
+<!-- 左边导航 结束 -->
+<!-- 面包屑导航 开始 -->
+<div class="main breadcrumb_nav trans_3">
+	<span class="layui-breadcrumb" lay-separator="—">
+	  <a href="./index.html">首页</a><a href="">文章列表</a><a><cite>文章标题</cite></a>
+	</span>
+</div>
+<!-- 面包屑导航 结束 -->
+<!-- 文章 开始 -->
+<div class="main">
+	<div class="page_left">	
+	<div class="detail_container trans_3">
+		<h1>老张博客上线了！</h1>
+		<div class="date_hits"><span><i>发布时间：</i>2个月前</span><span><i>作者：</i>老张</span><span><i>热度：</i> 888 ℃</span><span><i>评论数：</i> <a href="#SOHUCS" id="changyan_count_unit">888</a></span></div>
+		<div class="content">
+			<p>
+		       今年(2016年)年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。
+		       在五六月分的时候，想着这都半年过去了，博客的事情该提上日程了。于是，我查了想要的域名，看了看服务器，发现阿里云的服务器还是挺贵的。然后说，先做程序(PHP程序猿一只，打算自己开发CMS)，想着做程序还是需要时间的，如果先买了服务器和域名的话，现在也用不上纯属浪费。奔着勤俭节约不浪费的传统美德，就没有买，但是程序也并没有开始做，只是偶尔会想一下怎么做。就这样，又过去了几个月。
+		       直到九月份中下旬的时候，突然觉得，这再不开工就没时间了呀，因为白天要上班，只能晚上和周末时候有时间来做这个。终于在那一天，就是那一天，我上午选了域名www.pholaozhang.com，下午就买了当地一个IDC的虚拟主机(以后再升级嘛)，在那时候我的程序依然是一行也没有写。为什么之前没有写程序就不买域名和服务器而现在这么果断买了呢？是因为我觉得这件事该开工了，该提上日程了。买了域名和服务器就会觉得，如果再拖的话域名和服务器就浪费了。就这样，我的小项目就正式启动了。
+		       买了域名服务器，域名备案，之后我几乎每天晚上加班两小时攻程(写程序)。到现在，终于告一段落了。
+		       有时候，做一件事情最开始时候就不能拖延，开始拖延，后面就更拖延，到最后不能在计划的时间内完成。
+		       总之，不管经历了什么，遇到了什么问题，现在，老张博客上线了。在开发过程中也遇到了之前没想到的各种小问题，不能说历经磨难，也算小有坎坷。至于开发过程用遇到的各种问题，在之后的文章里再做分享。之后本站的CMS也会做分享，希望各位大神多多指教！</p>
+		</div>
+		<div class="keywords"><p>老张博客，博客上线</p></div>
+		<div class="prev_next">
+			<div class="prev">上一篇：<a href="">老张博客上线了！</a></div>
+			<div class="next">下一篇：<a href="">老张博客上线了！</a></div>
+			<div class="clear"></div>
+		</div>
+		<div class="commont_containr">
+			<!--【畅言】表情评价-->
+			<div id="cyEmoji" role="cylabs" data-use="emoji" sid="{$data['category_id']}{$data['id']}"></div>
+			<!--【畅言】PC和WAP自适应版-->
+			<div id="SOHUCS" sid="{$data['category_id']}{$data['id']}" ></div> 
+		</div>
+			
+	</div>
+	</div>
+	<div class="page_right">
+		<div class="second_categorys_container">
+			<h3>栏目导航</h3>
+			<ol class="page_right_list trans_3">
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 888 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 5 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 320 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 135 ℃ </span></li>
+			</ol>
+		</div>
+		<div class="recommend_list">
+			<h3>推荐文章</h3>
+			<ol class="page_right_list trans_3">
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 888 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 5 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 320 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 135 ℃ </span></li>
+			</ol>
+		</div> 
+		<div class="hot_list">
+			<h3>最近热文</h3>
+			<ol class="page_right_list trans_3">
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 888 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 5 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 320 ℃ </span></li>
+				<li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 135 ℃ </span></li>
+			</ol>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- 文章 结束 -->
+<!-- 底部 开始 --> 
+<ul class="layui-fixbar">
+	<!-- <li class="layui-icon qr_code">&#xe63b;<img class="qr_code_pic" src="{$settings.qr_code}" alt="微信公众号二维码"></li> -->
+	<li class="layui-icon layui-fixbar-top" id="to_top">&#xe604;</li>
+</ul>
+<div class="layui-footer footer">
+  <div class="main index_main">
+    <p><a href="http://www.phplaozhang.com">老张博客</a> © phplaozhang.com</p>
+    <p>
+      <a href="">网站地图</a>
+    </p>
+    <p class="beian">
+    	<a class="gongan" target="_blank" href=""><img src="./images/gonganbeian.png" alt="豫公网安备 410xxxxxxx号">豫公网安备 410xxxxxxx号</a>
+    	<a class="icp" target="_blank" href="http://www.miitbeian.gov.cn">豫ICP备xxxxxxxxx号-1</a>
+    </p>
+  </div>
+</div>
+<!-- 底部 结束 -->
+<script type="text/javascript">
+layui.use(['form','element'], function(){
+	var layer = layui.layer,
+	form = layui.form(),
+	element = layui.element(),
+	$ = layui.jquery;
+  	
+	//左边导航点击显示
+	$('.left_nav_btn').click(function(){
+		$('.left_nav_mask').show();
+		$('.left_nav').addClass('left_nav_show');
+	});
+	//左边导航点击消失
+	$('.left_nav_mask').click(function(){
+		$('.left_nav').removeClass('left_nav_show');
+		$('.left_nav_mask').hide();
+	});
+
+	//搜索框特效
+	$('.header .head_search .search_input').focus(function(){
+		$('.header .head_search').addClass('focus');
+		$(this).attr('placeholder','输入关键词搜索');
+	});
+	$(document).click(function(){
+		$('.header .head_search').removeClass('focus');
+		$('.header .head_search .search_input').attr('placeholder','搜索');
+	});
+	$('.header .head_search').click(function(e){
+		$(this).addClass('focus');
+		e.stopPropagation(); 
+	});
+	/*$('.header .head_search .close').click(function(){
+		$('.header .head_search').removeClass('focus');
+		$('.header .head_search .search_input').attr('placeholder','搜索');
+	});*/
+	
+	//回到顶部
+	$("#to_top").click(function() {
+      $("html,body").animate({scrollTop:0}, 200);
+    });
+    $(document).scroll(function(){
+    	var	scroll_top = $(document).scrollTop();
+    	if(scroll_top > 500){
+    		$("#to_top").show();
+    	}else{
+    		$("#to_top").hide(); 
+    	}
+    }); 
+    //底部版权始终在底部 
+    /*var win_height = $(window).height();
+    var body_height = $('body').height();  
+    var footer_height = $('.footer').height();
+    if(body_height - win_height < 0){
+    	$('.footer').addClass('footer_fixed');
+    } */
+});
+</script>
+</body>
+</html>
