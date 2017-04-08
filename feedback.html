@@ -10,49 +10,16 @@
     <meta name="viewport"
           content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
-    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="shortcut icon" href="./images/logo-icon.png">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./layui/layui.js"></script>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/load.js"></script>
 </head>
 <body>
-<!-- 头部 开始 -->
-<div class="layui-header header trans_3">
-    <div class="main index_main">
-        <a class="logo" href="./index.html"><img src="./images/logo.png" alt="阅微网-首页"></a>
-        <ul class="layui-nav" lay-filter="top_nav">
-            <li class="layui-nav-item home"><a href="./index.html">首页</a></li>
-            <li class="layui-nav-item"><a href="./article_list.html">学无止境</a></li>
-            <li class="layui-nav-item"><a href="./case_list.html">分享无价</a></li>
-            <li class="layui-nav-item"><a href="./diary.html">日记</a></li>
-            <li class="layui-nav-item"><a href="./about.html">关于</a></li>
-        </ul>
-    </div>
-</div>
-<div class="header_back"></div>
-<!-- 头部 结束 -->
-<!-- 左边导航 开始 -->
-<div class="layui-side layui-bg-black left_nav trans_2">
-    <div class="layui-side-scroll">
-        <ul class="layui-nav layui-nav-tree"  lay-filter="left_nav">
-            <li class="layui-nav-item home"><a href="./index.html">首页</a></li>
-            <li class="layui-nav-item">
-                <a href="./article_list.html">学无止境</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="./case_list.html">分享无价</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="./diary.html">日记</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="./about.html">关于</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="left_nav_mask"></div>
-<div class="left_nav_btn"><i class="layui-icon">&#xe602;</i></div>
-<!-- 左边导航 结束 -->
+<!-- nav start-->
+<div id="nav"></div>
+<!-- nav end-->
 <!-- 面包屑导航 开始 -->
 <div class="main breadcrumb_nav trans_3">
 	<span class="layui-breadcrumb" lay-separator="—">
@@ -75,18 +42,18 @@
         </form>
         <ul class="feedback_list">
             <!--<li>-->
-                <!--<div class="feedback_member">-->
-                    <!--<div class="avatar"><img src="./images/laozhang_avatar.png" alt="老张头像"></div>-->
-                    <!--<div class="name_date"><p class="name">老张</p>-->
-                        <!--<p class="date">3天前</p></div>-->
-                    <!--<div class="feedback_content">老张不赖呀</div>-->
-                <!--</div>-->
-                <!--<div class="feedback_member feedback_reply">-->
-                    <!--<div class="avatar"><img src="./images/laozhang_avatar.png" alt="老张头像"></div>-->
-                    <!--<div class="name_date"><p class="name">老张</p>-->
-                        <!--<p class="date">3天前</p></div>-->
-                    <!--<div class="feedback_content reply_content">回复：老张不赖呀</div>-->
-                <!--</div>-->
+            <!--<div class="feedback_member">-->
+            <!--<div class="avatar"><img src="./images/laozhang_avatar.png" alt="老张头像"></div>-->
+            <!--<div class="name_date"><p class="name">老张</p>-->
+            <!--<p class="date">3天前</p></div>-->
+            <!--<div class="feedback_content">老张不赖呀</div>-->
+            <!--</div>-->
+            <!--<div class="feedback_member feedback_reply">-->
+            <!--<div class="avatar"><img src="./images/laozhang_avatar.png" alt="老张头像"></div>-->
+            <!--<div class="name_date"><p class="name">老张</p>-->
+            <!--<p class="date">3天前</p></div>-->
+            <!--<div class="feedback_content reply_content">回复：老张不赖呀</div>-->
+            <!--</div>-->
             <!--</li>-->
         </ul>
     </div>
@@ -104,7 +71,9 @@
     </div>
     <div class="clear"></div>
 </div>
+
 <script type="text/javascript">
+
     layui.use(['form', 'layedit'], function () {
         var form = layui.form(),
             layer = layui.layer,
@@ -146,26 +115,12 @@
 
     });
 </script>
-<!-- 底部 开始 -->
-<ul class="layui-fixbar">
-    <li class="layui-icon layui-fixbar-top" id="to_top">&#xe604;</li>
-</ul>
-<div class="layui-footer footer">
-    <div class="main index_main">
-        <p><a href="http://www.phplaozhang.com">阅微网</a> ©2017 www.xingwu.org.cn</p>
-        <p>
-            <a href="">网站地图</a>
-        </p>
-        <p class="beian">
-            <a class="gongan" target="_blank" href=""><img src="./images/gonganbeian.png" alt="豫公网安备 410xxxxxxx号">浙公网安备 410xxxxxxx号</a>
-            <a class="icp" target="_blank" href="http://www.xingwu.org.cn">浙ICP备xxxxxxxxx号-1</a>
-        </p>
-    </div>
-</div>
-<!-- 底部 结束 -->
+<!-- footer start -->
+<div id="footer"></div>
+<!-- footer end -->
 <script type="text/javascript">
     layer.open({
-        type:1,
+        type: 1,
         content: 'hello layer'
     });
     layui.use(['form', 'element'], function () {

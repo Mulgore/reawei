@@ -9,23 +9,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
           content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="shortcut icon" href="./images/logo-icon.png">
     <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./layui/layui.js"></script>
-    <script type="text/javascript" src="./layui/layui.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/styles-banner.css">
     <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/load.js"></script>
     <script src="./js/banner.js"></script>
 </head>
 <body>
+<!-- nav start-->
 <div id="nav"></div>
-<!-- banner 全屏滚动 开始 -->
+<!-- nav end-->
+<!-- banner start -->
 <div class="banner">
-    <div class="b-img"><a href="#" style="background:url(images/banner0.jpg) center no-repeat;"></a><a href="#" style="background:url(images/banner1.jpg) center no-repeat;"></a><a href="#" style="background:url(images/banner2.jpg) center no-repeat;"></a></div>
+    <div class="b-img"><a href="#" style="background:url(images/banner0.jpg) center no-repeat;"></a><a href="#"
+                                                                                                       style="background:url(images/banner1.jpg) center no-repeat;"></a><a
+            href="#" style="background:url(images/banner2.jpg) center no-repeat;"></a></div>
     <div class="b-list"></div>
     <a class="bar-left" href="#"><em></em></a><a class="bar-right" href="#"><em></em></a></div>
-<!-- banner 全屏滚动 end -->
+<!-- banner end -->
 <div class="main index_main">
     <ul class="index-learn">
         <li>
@@ -48,128 +52,51 @@
         </li>
     </ul>
 </div>
-<div class="main ">
-    <div class="axis_page">
-        <div class="axis_container">
-            <!--<div class="y-line"></div>-->
-            <!--<h1><span><i class="layui-icon">&#xe642;</i></span>个人日记</h1>-->
-            <!--<ul>-->
-            <!--&lt;!&ndash;<li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="date">2017年02月19日</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="icon"><i class="layui-icon">&#xe643;</i></div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="diary">LzCMS(老张内容管理系统)，也就是老张博客的源码上线了！LzCMS是用ThinkPHP+layui做的，简单方便，没有复杂的功能，就是一个简单博客系统。希望能给需要的人带来方便，大神们还望多多指教！！！ 下载地址：http://www.phplaozhang.com/download-lists/13.html</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="clear"></div>&ndash;&gt;-->
-            <!--&lt;!&ndash;</li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="date">2016年12月29日</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="icon"><i class="layui-icon">&#xe643;</i></div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="diary">老张博客上线了！老张博客上线了！老张博客上线了！重要的事情要说三遍！</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="clear"></div>&ndash;&gt;-->
-            <!--&lt;!&ndash;</li>&ndash;&gt;-->
-            <!--</ul>-->
-            <div class="clear"></div>
-        </div>
-    </div>
-</div>
-<!-- 文章 开始 -->
-<div class="main index_main">
-    <div class="page_left">
-        <ul class="page_left_list">
-            <!-- 		<li>
-                        <a href="./article_view.html" class="pic"><img src="./images/article_pic.png" alt="老张博客上线了！"></a>
-                        <h2 class="title"><a href="./article_view.html">老张博客上线了！</a></h2>
-                        <div class="date_hits">
-                            <span>老张</span>
-                            <span>2个月前</span>
-                            <span><a href="http://www.phplaozhang.com">老张博客</a></span>
-                            <span class="hits"><i class="layui-icon" title="点击量"></i> 888 ℃</span>
-                            <p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span id="" class="cy_cmt_count">888</span></p>
+<div class="index-learn">
+    <div class="main ">
+        <div class="axis_page">
+            <div class="axis_container">
+                <div class="y-line"></div>
+                <h1>阅微网</h1>
+                <ul>
+                    <li style="margin-right: 40%;">
+                        <div class="date">2017年04月08日</div>
+                        <div class="icon"><i class="layui-icon">&#xe643;</i></div>
+                        <div class="diary">
+                            <p>个人信息</p>
+                            <p>花名：星武</p>
+                            <p>坐标：浙江 杭州</p>
+                            <p>职业：JAVA程序猿、WEB前端</p>
+                            <p>座右铭：业精于请、学无止境、工匠精神</p>
+                            <p>QQ：875237285</p>
                         </div>
-                        <div class="desc">今年(2016年)年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。在五六月分的时候，想着这都半年过去了，博</div>
+                        <div class="clear"></div>
                     </li>
-                    <li class="no_pic">
-                        <h2 class="title"><a href="./article_view.html">老张博客上线了！</a></h2>
-                        <div class="date_hits">
-                            <span>老张</span>
-                            <span>2个月前</span>
-                            <span><a href="http://www.phplaozhang.com">老张博客</a></span>
-                            <span class="hits"><i class="layui-icon" title="点击量"></i> 888 ℃</span>
-                            <p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span id="" class="cy_cmt_count">888</span></p>
+                    <li style="margin-right: 40%;">
+                        <div class="date">2017年04月08日</div>
+                        <div class="icon"><i class="layui-icon">&#xe643;</i></div>
+                        <div class="diary">
+                            <p>阅微网正式上线了</p>
+                            <p>我的第一个网站</p>
                         </div>
-                        <div class="desc">今年(2016年)年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。在五六月分的时候，想着这都半年过去了，博</div>
-                    </li> -->
-        </ul>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
     </div>
-    <!-- <div class="page_right">
-        <div class="about_stationmaster_container">
-            <h3>博主信息</h3>
-            <ol class="page_right_list trans_3">
-                <li>姓名：张丹峰</li>
-                <li>职业：PHP程序猿、WEB前端</li>
-                <li>座右铭：业精于请、学无止境、工匠精神</li>
-                <li>QQ群：602099721 </li>
-            </ol>
-        </div>
-        <div class="new_list">
-            <h3>最新文章</h3>
-            <ol class="page_right_list trans_3">
-                <li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 888 ℃ </span></li>
-                <li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 5 ℃ </span></li>
-                <li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 320 ℃ </span></li>
-                <li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 135 ℃ </span></li>
-            </ol>
-        </div>
-        <div class="hot_list">
-            <h3>最近热文</h3>
-            <ol class="page_right_list trans_3">
-                <li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 888 ℃ </span></li>
-                <li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 5 ℃ </span></li>
-                <li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 320 ℃ </span></li>
-                <li><a href="http://www.phplaozhang.com">老张博客上线啦(二)</a><span class="hits"> 135 ℃ </span></li>
-            </ol>
-        </div>
-        <h3>友情连接</h3>
-        <div class="links trans_3">
-            <a href="http://www.phplaozhang.com" target="_blank">老张博客</a>
-        </div>
-    </div> -->
-    <div class="clear"></div>
 </div>
-<!-- 文章 结束 -->
 
-<!-- 底部 开始 -->
-<ul class="layui-fixbar">
-    <li class="layui-icon layui-fixbar-top" id="to_top">&#xe604;</li>
-</ul>
-<div class="layui-footer footer">
-    <div class="main index_main">
-        <p><a href="http://www.phplaozhang.com">阅微网</a> ©2017 www.xingwu.org.cn</p>
-        <p>
-            <a href="">网站地图</a>
-        </p>
-        <p class="beian">
-            <a class="gongan" target="_blank" href=""><img src="./images/gonganbeian.png" alt="豫公网安备 410xxxxxxx号">浙公网安备
-                410xxxxxxx号</a>
-            <a class="icp" target="_blank" href="http://www.xingwu.org.cn">浙ICP备xxxxxxxxx号-1</a>
-        </p>
-    </div>
-</div>
-<!-- 底部 结束 -->
+<!-- footer start -->
+<div id="footer"></div>
+<!-- footer end -->
 <script type="text/javascript">
-    $(document).ready(function(){
-        $("#head").load("comm/head.html");
-        $("#nav").load("comm/header.html");
-    });
-
-    layui.use(['form', 'element','layer'], function () {
+    layui.use(['form', 'element', 'layer'], function () {
         var layer = layui.layer,
             form = layui.form(),
             element = layui.element(),
             $ = layui.jquery;
-//        layer.open({
-//            type:1,
-//            content:'comm/header.html'
-//        });
         //左边导航点击显示
         $('.left_nav_btn').click(function () {
             $('.left_nav_mask').show();
@@ -180,24 +107,7 @@
             $('.left_nav').removeClass('left_nav_show');
             $('.left_nav_mask').hide();
         });
-//
-//        //搜索框特效
-//        $('.header .head_search .search_input').focus(function () {
-//            $('.header .head_search').addClass('focus');
-//            $(this).attr('placeholder', '输入关键词搜索');
-//        });
-//        $(document).click(function () {
-//            $('.header .head_search').removeClass('focus');
-//            $('.header .head_search .search_input').attr('placeholder', '搜索');
-//        });
-//        $('.header .head_search').click(function (e) {
-//            $(this).addClass('focus');
-//            e.stopPropagation();
-//        });
-        /*$('.header .head_search .close').click(function(){
-         $('.header .head_search').removeClass('focus');
-         $('.header .head_search .search_input').attr('placeholder','搜索');
-         });*/
+
 
         //回到顶部
         $("#to_top").click(function () {

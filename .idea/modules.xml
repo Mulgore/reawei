@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/reawei.iml" filepath="$PROJECT_DIR$/.idea/reawei.iml" />
       <module fileurl="file://$PROJECT_DIR$/reawei.iml" filepath="$PROJECT_DIR$/reawei.iml" />
     </modules>
   </component>
