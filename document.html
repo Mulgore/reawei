@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="./images/logo-icon.png">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script type="text/javascript" src="./layui/layui.js"></script>
-	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/jquery-1.8.0.min.js"></script>
 	<script src="./js/load.js"></script>
 </head>
 <body>
@@ -21,52 +21,32 @@
 <!-- nav end-->
 <!-- 正文 开始 -->
 <div class="main" style="margin-top:1%;">
-	<div class="page" >
-		<ul class="page_left_list">
-			<li>
-				<a href="./article_view.html" class="pic"><img src="./images/article_pic.png" alt="老张博客上线了！"></a>
-				<h2 class="title"><a href="./article_view.html">老张博客上线了！</a></h2>
-				<div class="date_hits">
-					<span>老张</span>
-					<span>2个月前</span>
-					<span><a href="http://www.phplaozhang.com">老张博客</a></span>
-					<span class="hits"><i class="layui-icon" title="点击量"></i> 888 ℃</span>
-					<p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span id="" class="cy_cmt_count">888</span></p>
-				</div>
-				<div class="desc">今年(2016年)年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。在五六月分的时候，想着这都半年过去了，博</div>
-			</li>
-
-			<li class="no_pic">
-				<h2 class="title"><a href="./article_view.html">老张博客上线了！</a></h2>
-				<div class="date_hits">
-					<span>老张</span>
-					<span>2个月前</span>
-					<span><a href="http://www.phplaozhang.com">老张博客</a></span>
-					<span class="hits"><i class="layui-icon" title="点击量"></i> 888 ℃</span>
-					<p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span id="" class="cy_cmt_count">888</span></p>
-				</div>
-				<div class="desc">今年(2016年)年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。在五六月分的时候，想着这都半年过去了，博</div>
-			</li>
-
-		</ul>
-		<div id="page">
-			<ul class="pagination">
-				<li class="disabled"><span>&laquo;</span></li><li class="active"><span>1</span></li><li><a href="">2</a></li> <li><a href="">&raquo;</a></li>
-			</ul>
-		</div>
-	</div>
+	<div class="page"  id="page"></div>
 </div>
 <!-- footer start -->
 <div id="footer"></div>
 <!-- footer end -->
-<script type="text/javascript">
 
-layui.use(['form','element'], function(){
+<script type="text/javascript">
+//config的设置是全局的
+layui.config({
+  base: '/js/'
+}).extend({ //设定模块别名
+    tables: 'tables' //如果test.js是在根目录，也可以不用设定别名
+});
+
+layui.use(['form','element','tables','laytpl'], function(){
 	var layer = layui.layer,
 	form = layui.form(),
 	element = layui.element(),
+	btable = layui.tables(),
+	laytpl = layui.laytpl,
 	$ = layui.jquery;
-  	
+
+    var data = [{"id":"1","title":"阅微网上线了！！！","author":"星武","createTime":"2017年04月10日","clickate":"888","desc":"今年(2016年)年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。在五六月分的时候，想着这都半年过去了，博"},{"id":"2","title":"阅微网上线了！！！","author":"星武","createTime":"2017年04月10日","clickate":"888","desc":"今年(2016年年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。在五六月分的时候，想着这都半年过去了，博"}]
+   	laytpl(btable.columns(data)).ready(data,function (html) {
+		$("#page").append(html);
+    });
 	//左边导航点击显示
 	$('.left_nav_btn').click(function(){
 		$('.left_nav_mask').show();
@@ -108,14 +88,19 @@ layui.use(['form','element'], function(){
     		$("#to_top").hide(); 
     	}
     }); 
-    //底部版权始终在底部 
+    //底部版权始终在底部 desc
     /*var win_height = $(window).height();
     var body_height = $('body').height();  
     var footer_height = $('.footer').height();
     if(body_height - win_height < 0){
     	$('.footer').addClass('footer_fixed');
     } */
+
 });
+
+
+
 </script>
+
 </body>
 </html>
