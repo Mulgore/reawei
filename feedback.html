@@ -20,57 +20,30 @@
 <!-- nav start-->
 <div id="nav"></div>
 <!-- nav end-->
-<!-- 面包屑导航 开始 -->
-<div class="main breadcrumb_nav trans_3">
-	<span class="layui-breadcrumb" lay-separator="—">
-	  <a href="./index.html">首页</a><a><cite>留言</cite></a>
-	</span>
-</div>
-<!-- 面包屑导航 结束 -->
+<!-- 图片列表开始 -->
 <div class="main">
-    <div class="page_left">
-        <form class="layui-form feedback-form">
-            <div class="layui-form-item">
-                <div class="">
-                    <textarea name="content" lay-verify="layedit" autocomplete="off" placeholder="我要留言"
-                              class="llayui-textarea layui-hide" id="content"></textarea>
+    <div class="picture_list_container">
+        <ul>
+            <li class="trans_3">
+                <a href="http://www.phplaozhang.com/download-lists/13.html" class="pic"><img src="./images/no_pic.png" alt="Lz_CMS1.0"></a>
+                <h2 class="title"><a href="http://www.phplaozhang.com/download-lists/13.html">LzCMS博客系统下载</a></h2>
+                <p class="desc">后台和前台都用到了layui，做了一个简单的博客系统，用thinkphp开发的，使用简单方便。</p>
+                <div class="date_hits">
+                    <p class="date"><span>老张</span><span>7天前</span></p>
+                    <span class="hits"><i class="layui-icon" title="点击量">&#xe62c;</i> 342 ℃</span>
+                    <a href="http://www.phplaozhang.com/download-lists/13.html" class="layui-btn layui-btn-primary">详情</a>
                 </div>
-            </div>
-            <div class="layui-form-item">
-                <button class="layui-btn" lay-submit="" lay-filter="feedback">提交留言</button>
-            </div>
-        </form>
-        <ul class="feedback_list">
-            <!--<li>-->
-            <!--<div class="feedback_member">-->
-            <!--<div class="avatar"><img src="./images/laozhang_avatar.png" alt="老张头像"></div>-->
-            <!--<div class="name_date"><p class="name">老张</p>-->
-            <!--<p class="date">3天前</p></div>-->
-            <!--<div class="feedback_content">老张不赖呀</div>-->
-            <!--</div>-->
-            <!--<div class="feedback_member feedback_reply">-->
-            <!--<div class="avatar"><img src="./images/laozhang_avatar.png" alt="老张头像"></div>-->
-            <!--<div class="name_date"><p class="name">老张</p>-->
-            <!--<p class="date">3天前</p></div>-->
-            <!--<div class="feedback_content reply_content">回复：老张不赖呀</div>-->
-            <!--</div>-->
-            <!--</li>-->
+            </li>
+            <div class="clear"></div>
         </ul>
     </div>
-    <div class="page_right">
-        <div class="about_stationmaster_container">
-            <h3>博主信息</h3>
-            <ol class="page_right_list trans_3">
-                <li>姓名：王星星</li>
-                <li>花名：星武</li>
-                <li>职业：JAVA程序猿、WEB前端</li>
-                <li>座右铭：业精于请、学无止境、工匠精神</li>
-                <li>QQ：875237285</li>
-            </ol>
-        </div>
+    <div id="page" style="min-height: 10px;">
+        <ul class="pagination">
+            <li class="disabled"><span>&laquo;</span></li><li class="active"><span>1</span></li><li><a href="">2</a></li> <li><a href="">&raquo;</a></li>
+        </ul>
     </div>
-    <div class="clear"></div>
 </div>
+<!-- 图片列表结束 -->
 
 <script type="text/javascript">
 
