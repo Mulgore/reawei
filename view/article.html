@@ -1,24 +1,23 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; Charset=gb2312">
     <meta http-equiv="Content-Language" content="zh-CN">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <title>Document - Reawei</title>
     <link rel="shortcut icon" href="../images/logo-icon.png" type="image/x-icon">
     <!--Layui-->
-    <link href="../plug/layui/css/layui.css" rel="stylesheet" />
+    <link href="../plug/layui/css/layui.css" rel="stylesheet"/>
     <!--font-awesome-->
-    <link href="../plug/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../plug/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <!--全局样式表-->
-    <link href="../css/global.css" rel="stylesheet" />
+    <link href="../css/global.css" rel="stylesheet"/>
     <!--本页样式表-->
-    <link href="../css/article.css" rel="stylesheet" />
+    <link href="../css/article.css" rel="stylesheet"/>
 </head>
 <body>
-    <!-- 导航 -->
+<!-- 导航 -->
 <nav class="blog-nav layui-header">
     <div class="blog-container">
         <a class="blog-logo" href="home.html">Reawei</a>
@@ -46,95 +45,114 @@
         </a>
     </div>
 </nav>
-    <!-- 主体（一般只改变这里的内容） -->
-    <div class="blog-body">
-        <div class="blog-container">
-              <blockquote style="padding: 1%;">
-            </blockquote>
-            <div class="blog-main">
-                <div class="blog-main">
-                    <!--<div class="shadow" style="text-align:center;font-size:16px;padding:40px 15px;background:#fff;margin-bottom:15px;">-->
-                        <!--未搜索到与【<span style="color: #FF5722;">keywords</span>】有关的文章，随便看看吧！-->
-                    <!--</div>-->
-                    <div class="article shadow">
-                        <div class="article-left">
-                            <img src="../images/cover/201703181909057125.jpg" alt="基于laypage的layui扩展模块（pagesize.js）！" />
-                        </div>
-                        <div class="article-right">
-                            <div class="article-title">
-                                <a href="detail.html">基于laypage的layui扩展模块（pagesize.js）！</a>
-                            </div>
-                            <div class="article-abstract">
-                                该模块主要是针对当前版本laypage没有页容量控制功能而制作，使用该模块后即可实现每页显示多少条数据的控制！本人原创，但是可能有可能只对本人的分页写法有用！
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="article-footer">
-                            <span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2017-03-18</span>
-                            <span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;Absolutely</span>
-                            <span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="#">Web前端</a></span>
-                            <span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;0</span>
-                            <span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;4</span>
-                        </div>
-                    </div>
-                </div>
-                    <!--右边悬浮 平板或手机设备显示-->
-                    <!--<div class="category-toggle"><i class="fa fa-chevron-left"></i></div>-->
-                </div>
-                <div class="clear"></div>
+<!-- 主体（一般只改变这里的内容） -->
+<div class="blog-body">
+    <div class="blog-container">
+        <blockquote style="padding: 1%;">
+        </blockquote>
+        <div class="blog-main" id="resultMain">
+                <!--<div class="shadow" style="text-align:center;font-size:16px;padding:40px 15px;background:#fff;margin-bottom:15px;">-->
+                <!--未搜索到与【<span style="color: #FF5722;">keywords</span>】有关的文章，随便看看吧！-->
+                <!--</div>-->
+            <!--右边悬浮 平板或手机设备显示-->
+            <!--<div class="category-toggle"><i class="fa fa-chevron-left"></i></div>-->
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+<!-- 底部 -->
+<div class="layui-footer footer footer-index">
+    <div class="blog-container">
+        <p>© 2017 <a href="www.reawei.cn">reawei.cn</a> MIT license</p>
+        <p>
+            <a href="#" target="_blank">案例</a>
+            <a href="#" target="_blank">捐赠</a>
+            <a href="#" target="_blank">关于我们</a>
+            <a href="#" target="_blank">联系</a>
+            <a href="#" target="_blank">Git仓库</a>
+            <a href="#" target="_blank">微信公众号</a>
+        </p>
+    </div>
+</div>
+<!--侧边导航-->
+<ul class="layui-nav layui-nav-tree layui-nav-side blog-nav-left layui-hide" lay-filter="nav">
+    <li class="layui-nav-item">
+        <a href="home.html"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a>
+    </li>
+    <li class="layui-nav-item layui-this">
+        <a href="article.html"><i class="fa fa-file-text fa-fw"></i>&nbsp;Document</a>
+    </li>
+    <li class="layui-nav-item">
+        <a href="resource.html"><i class="fa fa-tags fa-fw"></i>&nbsp;Share</a>
+    </li>
+    <li class="layui-nav-item">
+        <a href="timeline.html"><i class="fa fa-road fa-fw"></i>&nbsp;TimeLine</a>
+    </li>
+    <li class="layui-nav-item">
+        <a href="about.html"><i class="fa fa-info fa-fw"></i>&nbsp;About</a>
+    </li>
+</ul>
+<!--分享窗体-->
+<div class="blog-share layui-hide">
+    <div class="blog-share-body">
+        <div style="width: 200px;height:100%;">
+            <div class="bdsharebuttonbox">
+                <a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                <a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
             </div>
         </div>
     </div>
- <!-- 底部 -->
-    <div class="layui-footer footer footer-index">
-        <div class="blog-container">
-            <p>© 2017 <a href="www.reawei.cn">reawei.cn</a> MIT license</p>
-            <p>
-                <a href="#" target="_blank">案例</a>
-                <a href="#" target="_blank">捐赠</a>
-                <a href="#" target="_blank">关于我们</a>
-                <a href="#" target="_blank">联系</a>
-                <a href="#" target="_blank">Git仓库</a>
-                <a href="#" target="_blank">微信公众号</a>
-            </p>
-        </div>
-    </div>
-    <!--侧边导航-->
-    <ul class="layui-nav layui-nav-tree layui-nav-side blog-nav-left layui-hide" lay-filter="nav">
-        <li class="layui-nav-item">
-            <a href="home.html"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a>
-        </li>
-        <li class="layui-nav-item layui-this">
-            <a href="article.html"><i class="fa fa-file-text fa-fw"></i>&nbsp;Document</a>
-        </li>
-        <li class="layui-nav-item">
-            <a href="resource.html"><i class="fa fa-tags fa-fw"></i>&nbsp;Share</a>
-        </li>
-        <li class="layui-nav-item">
-            <a href="timeline.html"><i class="fa fa-road fa-fw"></i>&nbsp;TimeLine</a>
-        </li>
-        <li class="layui-nav-item">
-            <a href="about.html"><i class="fa fa-info fa-fw"></i>&nbsp;About</a>
-        </li>
-    </ul>
-    <!--分享窗体-->
-    <div class="blog-share layui-hide">
-        <div class="blog-share-body">
-            <div style="width: 200px;height:100%;">
-                <div class="bdsharebuttonbox">
-                    <a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                    <a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                    <a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                    <a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--遮罩-->
-    <div class="blog-mask animated layui-hide"></div>
-    <!-- layui.js -->
-    <script src="../plug/layui/layui.js"></script>
-    <!-- 全局脚本 -->
-    <script src="../js/global.js"></script>
+</div>
+<!--遮罩-->
+<div class="blog-mask animated layui-hide"></div>
+<!-- layui.js -->
+<script src="../plug/layui/layui.js"></script>
+<!-- 全局脚本 -->
+<script src="../js/global.js"></script>
+<script src="../js/jquery-1.8.0.min.js"></script>
+<script>
+    $(function () {
+        var deskKey = "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJ7DFVtT8itWqsE4OrE6x078yfv3y7xh8CNdtXzS3N53SB1McbFcbuRPpnc6Iu7wnAuHJLfwvEF3wqQ+/BerT6MCAwEAAQ==";
+        var url = "http://api.reawei.cn/v1/doc/result/" + deskKey + ".html";
+        var appId = 1076;
+        $.ajax({
+            url: url,
+            data: {'appId': appId},
+            type: "GET",
+            datatype: "json",
+            success: function (data) {
+                var d = JSON.parse(data);
+                var html ='';
+                d.data.forEach(function (element, index, array) {
+                    html +='<div class="article shadow">';
+                    html +='<div class="article-left">';
+                    html +=' <img src="../images/cover/201703181909057125.jpg" alt="基于laypage的layui扩展模块（pagesize.js）！"/>';
+                    html +='</div>';
+                    html +='<div class="article-right">';
+                    html +='<div class="article-title">';
+                    html +='<a href="detail.html">'+element.title+'</a>';
+                    html +='</div>';
+                    html +='<div class="article-abstract">';
+                    html +=element.contents;
+                    html +='</div>';
+                    html +='</div>';
+                    html +='<div class="clear"></div>';
+                    html +='<div class="article-footer">';
+                    html +='<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;'+element.createTime+'</span>';
+                    html +='<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;'+element.author+'</span>';
+                    html +='<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="#">Web前端</a></span>';
+                    html +='<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;'+element.clickRate+'</span>';
+                    html +='<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;'+element.clickRate+'</span>';
+                    html +='</div>';
+                    html +='</div>';
+                });
+                $("#resultMain").append(html);
+            }
+        });
+    });
+</script>
 </body>
 </html>
